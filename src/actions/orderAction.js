@@ -30,6 +30,7 @@ export const getUserOrders = (user_order) => async (dispatch, getState) => {
     ? JSON.parse(localStorage.getItem("cartItems"))
   : [];
     //console.log("placed");
+    user_order.orderId = response.data.orderId;
     dispatch({ type: "USER_ORDER_SUCCESS", payload: orders });
   } catch (error) {
     //console.log("error in placing order");
