@@ -57,7 +57,7 @@ export const deletePizza = (pizzaId) => async (dispatch) => {
   try {
     await axios.delete("https://e-catering-item-service.herokuapp.com/api/items/"
     +trainNo+"/"+pizzaId);
-    swal("Pizza Deleted Succss!", "success");
+    swal("Meal Deleted Succss!", "success");
     window.location.href = "/admin/pizzalist";
     // console.log(res);
   } catch (error) {
