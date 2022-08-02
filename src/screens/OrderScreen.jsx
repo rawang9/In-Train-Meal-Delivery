@@ -13,7 +13,7 @@ const forwarder1 = () => {
 const passngerDetail = JSON.parse(localStorage.getItem("pnrUser"));
 if(passngerDetail!== null){
   var user_order = {                                    
-    "orderId": "oid"+Math.floor(Math.random() * (9999999999999 - 1000000000000 + 1)+0),
+    "orderId": "",
     "trainNo": passngerDetail.trainNo,
     "passengerNameAndSeatNo": passngerDetail.passengerName +','+passngerDetail.seatNo,
     "orderStatus": "Pending"
